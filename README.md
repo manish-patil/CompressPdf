@@ -1,3 +1,7 @@
+<img width="734" height="484" alt="Screenshot 2026-06-21 142159" src="https://github.com/user-attachments/assets/bf5866d1-61c9-421b-ac84-1fc0f20071dd" />
+
+
+
 This utility is created to compress .pdf files, perticularly my CV - which created in MS Word and saved in .pdf file creates a file clsoe to 4 MB.
 Job portals require a file size of less than 2 MB. The utility is compressing a 3.82 MB file to 93 KB.
 
