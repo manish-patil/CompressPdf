@@ -26,6 +26,12 @@ namespace PDFCompress
 
             // Read the Syncfusion API key from the app.config file. More information in README.md
             syncFusionKey = ConfigurationManager.AppSettings["SYNCFUSION_API_KEY"] ?? string.Empty;
+
+            if (string.IsNullOrEmpty(syncFusionKey)) { 
+                MessageBox.Show("Syncfusion API key is missing. Please add it to the app.config file. For more information read README.md", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                Application.Current.Shutdown();
+            }
         }
 
         private void btnSelectFile_Click(object sender, RoutedEventArgs e)
