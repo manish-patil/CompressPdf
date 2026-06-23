@@ -52,6 +52,7 @@
                         Visibility="{Binding IsCompressed, Converter={StaticResource IsCompressedConverter}}"
                         Text="{Binding CompressionStatusMessage, Mode=OneWay}"
                         FontSize="30" 
+                        TextWrapping="Wrap"
                         Foreground="{Binding IsCompressed, Converter={StaticResource CompressToColorConverter}}"
                         HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20"></TextBlock>
             </StackPanel>

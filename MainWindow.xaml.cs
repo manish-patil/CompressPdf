@@ -81,7 +81,7 @@ namespace PDFCompress
                         // 3. Apply and Save compressed document
                         document.Compress(options);
 
-                        var path = $"{Directory.GetParent(viewModel.FilePathToCompress)}\\compressed.pdf";
+                        var path = $"{Directory.GetParent(viewModel.FilePathToCompress)}\\{viewModel.FileNameToCompress?.Replace(".pdf", "")}-Compressed.pdf";
 
                         document.Save(path);
 
